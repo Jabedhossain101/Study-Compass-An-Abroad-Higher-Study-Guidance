@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Compass — Design Prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= PROTOTYPE NAVIGATION (flip between Figma-style frames) ================= -->
+<div class="proto-bar">
+  <span class="proto-label">◆ Study Compass — Prototype</span>
+  <div class="proto-tab active" onclick="showScreen('landing', this)">01 Landing</div>
+  <div class="proto-tab" onclick="showScreen('dashboard', this)">02 Student Dashboard</div>
+  <div class="proto-tab" onclick="showScreen('search', this)">03 University Search</div>
+  <div class="proto-tab" onclick="showScreen('tracker', this)">04 Application Tracker</div>
+  <div class="proto-tab" onclick="showScreen('forum', this)">05 Community Forum</div>
+  <div class="proto-tab" onclick="showScreen('admin', this)">06 Admin Dashboard</div>
+</div>
+
+<!-- ================= 01 LANDING ================= -->
+<section class="screen active" id="landing">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo"><span class="logo-mark">S</span>Study Compass</div>
+      <nav class="nav-links">
+        <a href="#">Universities</a>
+        <a href="#">Scholarships</a>
+        <a href="#">Exam Prep</a>
+        <a href="#">Events</a>
+        <a href="#">Community</a>
+      </nav>
+      <div class="top-actions">
+        <a class="btn btn-ghost" href="#">Log in</a>
+        <a class="btn btn-primary" href="#">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Guidance for 40,000+ students since 2021</span>
+        <h1>Find your path to <em>study abroad</em>, one decision at a time.</h1>
+        <p class="hero-sub">Study Compass brings universities, scholarships, deadlines, and visa guidance into a single place — so you spend less time searching and more time preparing.</p>
+        <div class="hero-search">
+          <input type="text" placeholder="Try “Computer Science in Canada under $20,000”">
+          <button class="btn btn-primary btn-sm">Search</button>
+        </div>
+        <div class="hero-cta" style="margin-top:8px;">
+          <div class="hero-stats">
+            <div class="hero-stat"><b>3,200+</b><span>Partner universities</span></div>
+            <div class="hero-stat"><b>1,800+</b><span>Active scholarships</span></div>
+            <div class="hero-stat"><b>92%</b><span>On-time applications</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hv-globe"></div>
+        <div class="hv-dot" style="top:30%; left:38%;"></div>
+        <div class="hv-dot" style="top:52%; left:64%;"></div>
+        <div class="hv-dot" style="top:66%; left:30%;"></div>
+        <div class="hv-card hv-card1">
+          <div class="hv-tag">Scholarship match</div>
+          <div class="hv-title">DAAD Study Grant — Germany</div>
+          <div class="hv-meta">Deadline in 12 days</div>
+        </div>
+        <div class="hv-card hv-card2">
+          <div class="hv-tag">Application status</div>
+          <div class="hv-title">University of Toronto</div>
+          <div class="hv-meta">Documents 4 of 6 complete</div>
+          <div class="hv-progress"><i></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="logos-row">
+      <span>Trusted by students heading to</span>
+      <span>University of Toronto</span><span>TU Munich</span><span>NUS Singapore</span><span>University of Melbourne</span><span>KTH Stockholm</span>
+    </div>
+  </div>
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="section-head">
+      <span class="kicker">What you can do</span>
+      <h2>Everything for your application, organized into three stages.</h2>
+      <p>From first search to final offer, each stage of Study Compass is built around what you actually need to decide next.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-cell">
+        <div class="feature-num">Stage 1</div>
+        <h4>Discover</h4>
+        <p>Search universities by country, budget, and course. Filter scholarships by eligibility and deadline. Estimate real costs with live currency conversion.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-num">Stage 2</div>
+        <h4>Prepare</h4>
+        <p>Download SOP and recommendation templates, build a document checklist, upload files, and track every application in one dashboard.</p>
+      </div>
+      <div class="feature-cell">
+        <div class="feature-num">Stage 3</div>
+        <h4>Decide</h4>
+        <p>Get financial aid advice, ask questions in the community forum, and follow visa guidance until your offer becomes a plane ticket.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="split">
+    <div>
+      <span class="eyebrow">Application tracking</span>
+      <h2 style="font-size:30px; margin-top:14px; line-height:1.25;">Never miss a deadline across multiple applications.</h2>
+      <ul class="split-list" style="margin-top:26px;">
+        <li><div class="split-check">✓</div><div><b>Structured status tracking</b><span>Draft, submitted, under review, offer — see every application at a glance.</span></div></li>
+        <li><div class="split-check">✓</div><div><b>Deadline notifications</b><span>Get alerted before scholarship and document deadlines pass.</span></div></li>
+        <li><div class="split-check">✓</div><div><b>Shared checklists</b><span>Reusable templates for SOPs, resumes, and recommendation letters.</span></div></li>
+      </ul>
+    </div>
+    <div class="mock-panel">
+      <div class="mock-row"><span>University of Toronto — CS MSc</span><span class="pill pill-success">Under review</span></div>
+      <div class="mock-row"><span>TU Munich — Data Engineering</span><span class="pill pill-warning">Docs pending</span></div>
+      <div class="mock-row"><span>NUS — Computer Science</span><span class="pill pill-muted">Draft</span></div>
+      <div class="mock-row"><span>KTH Stockholm — AI Track</span><span class="pill pill-success">Offer received</span></div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div>
+      <h3>Start your study abroad plan today.</h3>
+      <p>Create a free profile and get matched with universities and scholarships in minutes.</p>
+    </div>
+    <a class="btn btn-primary" style="background:var(--gold); color:var(--ink);" href="#">Create free account</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="logo" style="color:#fff;"><span class="logo-mark">S</span>Study Compass</div>
+        <p style="font-size:13px; margin-top:14px; max-width:260px; line-height:1.6;">An abroad higher study guidance and application management platform.</p>
+      </div>
+      <div><h5>Explore</h5><ul><li>Universities</li><li>Scholarships</li><li>Exam Prep</li><li>Events</li></ul></div>
+      <div><h5>Support</h5><ul><li>FAQ</li><li>Contact us</li><li>Community</li></ul></div>
+      <div><h5>Legal</h5><ul><li>Terms of service</li><li>Privacy policy</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Study Compass</span><span>English / বাংলা</span></div>
+  </footer>
+</section>
+
+<!-- ================= 02 STUDENT DASHBOARD ================= -->
+<section class="screen" id="dashboard">
+  <div class="app-shell">
+    <nav class="app-nav">
+      <div class="app-logo"><span class="logo-mark">S</span>Study Compass</div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Main</span>
+        <a class="active" href="#"><span class="ic">◆</span>Dashboard</a>
+        <a href="#"><span class="ic">⌕</span>Search Universities</a>
+        <a href="#"><span class="ic">✎</span>Application Tracker</a>
+        <a href="#"><span class="ic">◧</span>Document Checklist</a>
+        <a href="#"><span class="ic">$</span>Budget Estimator</a>
+      </div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Community</span>
+        <a href="#"><span class="ic">◔</span>Forum</a>
+        <a href="#"><span class="ic">i</span>Financial Aid</a>
+      </div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Account</span>
+        <a href="#"><span class="ic">☺</span>Profile</a>
+        <a href="#"><span class="ic">⚙</span>Settings</a>
+      </div>
+    </nav>
+    <main class="app-main">
+      <div class="app-header">
+        <div>
+          <h1>Welcome back, Ayesha</h1>
+          <p>Here's where your applications stand today, 31 August.</p>
+        </div>
+        <div class="top-actions">
+          <span class="avatar">AS</span>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="card stat-card"><span>Active applications</span><b>6</b><span class="delta delta-up">+2 this month</span></div>
+        <div class="card stat-card"><span>Saved scholarships</span><b>14</b><span class="delta delta-up">+3 this week</span></div>
+        <div class="card stat-card"><span>Documents complete</span><b>78%</b><span class="delta delta-up">On track</span></div>
+        <div class="card stat-card"><span>Upcoming deadlines</span><b>3</b><span class="delta delta-down">Next in 5 days</span></div>
+      </div>
+
+      <div class="dash-grid">
+        <div>
+          <div class="card card-pad" style="margin-bottom:20px;">
+            <div class="card-title-row"><h3>Recent applications</h3><span class="link-sm">View tracker →</span></div>
+            <div class="app-item">
+              <div class="app-item-icon">UT</div>
+              <div class="app-item-body"><b>University of Toronto — MSc Computer Science</b><span>Documents 4 of 6 uploaded</span></div>
+              <span class="pill pill-success">Under review</span>
+            </div>
+            <div class="app-item">
+              <div class="app-item-icon">TU</div>
+              <div class="app-item-body"><b>TU Munich — Data Engineering</b><span>SOP and transcript pending</span></div>
+              <span class="pill pill-warning">Docs pending</span>
+            </div>
+            <div class="app-item">
+              <div class="app-item-icon">NU</div>
+              <div class="app-item-body"><b>NUS — Computer Science</b><span>Not yet started</span></div>
+              <span class="pill pill-muted">Draft</span>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <div class="card-title-row"><h3>Document checklist</h3><span class="link-sm">Manage →</span></div>
+            <div class="checklist-item"><div class="cb done"></div><span>Statement of Purpose — final draft</span></div>
+            <div class="checklist-item"><div class="cb done"></div><span>Academic transcripts (verified copy)</span></div>
+            <div class="checklist-item"><div class="cb"></div><span>Two recommendation letters</span></div>
+            <div class="checklist-item"><div class="cb"></div><span>IELTS score report</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card card-pad" style="margin-bottom:20px;">
+            <div class="card-title-row"><h3>Notifications</h3></div>
+            <div class="notif-item"><b><span class="notif-dot"></span>DAAD scholarship closes in 12 days</b><span>Reminder</span></div>
+            <div class="notif-item"><b><span class="notif-dot"></span>TU Munich requested an updated transcript</b><span>2 hours ago</span></div>
+            <div class="notif-item"><b><span class="notif-dot"></span>New reply on your forum thread</b><span>Yesterday</span></div>
+          </div>
+          <div class="card card-pad">
+            <div class="card-title-row"><h3>Bookmarks</h3></div>
+            <div class="app-item"><div class="app-item-icon">KT</div><div class="app-item-body"><b>KTH Royal Institute</b><span>Sweden · AI track</span></div></div>
+            <div class="app-item"><div class="app-item-icon">ME</div><div class="app-item-body"><b>University of Melbourne</b><span>Australia · Data Science</span></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ================= 03 UNIVERSITY SEARCH ================= -->
+<section class="screen" id="search">
+  <div class="app-shell">
+    <nav class="app-nav">
+      <div class="app-logo"><span class="logo-mark">S</span>Study Compass</div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Main</span>
+        <a href="#"><span class="ic">◆</span>Dashboard</a>
+        <a class="active" href="#"><span class="ic">⌕</span>Search Universities</a>
+        <a href="#"><span class="ic">✎</span>Application Tracker</a>
+        <a href="#"><span class="ic">◧</span>Document Checklist</a>
+        <a href="#"><span class="ic">$</span>Budget Estimator</a>
+      </div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Community</span>
+        <a href="#"><span class="ic">◔</span>Forum</a>
+        <a href="#"><span class="ic">i</span>Financial Aid</a>
+      </div>
+    </nav>
+    <main class="app-main">
+      <div class="app-header">
+        <div><h1>Search universities</h1><p>3,214 universities across 42 countries match your saved profile.</p></div>
+      </div>
+      <div class="search-layout">
+        <div class="card card-pad" style="align-self:start;">
+          <div class="filter-block">
+            <h4>Country</h4>
+            <label class="filter-opt"><input type="checkbox" checked>Canada</label>
+            <label class="filter-opt"><input type="checkbox" checked>Germany</label>
+            <label class="filter-opt"><input type="checkbox">United Kingdom</label>
+            <label class="filter-opt"><input type="checkbox">Australia</label>
+            <label class="filter-opt"><input type="checkbox">Sweden</label>
+          </div>
+          <div class="filter-block">
+            <h4>Budget range (per year)</h4>
+            <div class="range-track"><i></i><b style="left:20%;"></b><b style="left:65%;"></b></div>
+            <p style="font-size:12.5px; color:var(--muted);">$8,000 — $22,000</p>
+          </div>
+          <div class="filter-block">
+            <h4>Course</h4>
+            <label class="filter-opt"><input type="checkbox" checked>Computer Science</label>
+            <label class="filter-opt"><input type="checkbox">Data Science</label>
+            <label class="filter-opt"><input type="checkbox">Business Analytics</label>
+          </div>
+          <div class="filter-block">
+            <h4>Intake</h4>
+            <label class="filter-opt"><input type="checkbox" checked>Fall 2027</label>
+            <label class="filter-opt"><input type="checkbox">Spring 2027</label>
+          </div>
+          <button class="btn btn-outline" style="width:100%; justify-content:center;">Reset filters</button>
+        </div>
+
+        <div>
+          <div class="uni-grid">
+            <div class="card uni-card">
+              <div class="uni-flag">UT</div>
+              <div>
+                <h4>University of Toronto</h4>
+                <div class="loc">Toronto, Canada</div>
+                <div class="uni-tags"><span class="tag">MSc Computer Science</span><span class="tag">Fall intake</span></div>
+                <div class="uni-foot"><b>$19,500 / yr</b><span class="link-sm">View details →</span></div>
+              </div>
+            </div>
+            <div class="card uni-card">
+              <div class="uni-flag">TU</div>
+              <div>
+                <h4>Technical University of Munich</h4>
+                <div class="loc">Munich, Germany</div>
+                <div class="uni-tags"><span class="tag">Data Engineering</span><span class="tag">No tuition fee</span></div>
+                <div class="uni-foot"><b>$1,200 / yr</b><span class="link-sm">View details →</span></div>
+              </div>
+            </div>
+            <div class="card uni-card">
+              <div class="uni-flag">KT</div>
+              <div>
+                <h4>KTH Royal Institute of Technology</h4>
+                <div class="loc">Stockholm, Sweden</div>
+                <div class="uni-tags"><span class="tag">AI &amp; Machine Learning</span><span class="tag">Spring intake</span></div>
+                <div class="uni-foot"><b>$16,800 / yr</b><span class="link-sm">View details →</span></div>
+              </div>
+            </div>
+            <div class="card uni-card">
+              <div class="uni-flag">NU</div>
+              <div>
+                <h4>National University of Singapore</h4>
+                <div class="loc">Singapore</div>
+                <div class="uni-tags"><span class="tag">Computer Science</span><span class="tag">Merit scholarship</span></div>
+                <div class="uni-foot"><b>$21,300 / yr</b><span class="link-sm">View details →</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ================= 04 APPLICATION TRACKER ================= -->
+<section class="screen" id="tracker">
+  <div class="app-shell">
+    <nav class="app-nav">
+      <div class="app-logo"><span class="logo-mark">S</span>Study Compass</div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Main</span>
+        <a href="#"><span class="ic">◆</span>Dashboard</a>
+        <a href="#"><span class="ic">⌕</span>Search Universities</a>
+        <a class="active" href="#"><span class="ic">✎</span>Application Tracker</a>
+        <a href="#"><span class="ic">◧</span>Document Checklist</a>
+        <a href="#"><span class="ic">$</span>Budget Estimator</a>
+      </div>
+    </nav>
+    <main class="app-main">
+      <div class="app-header">
+        <div><h1>Application tracker</h1><p>6 applications in progress across 5 countries.</p></div>
+        <button class="btn btn-primary">+ New application</button>
+      </div>
+      <div class="tracker-cols">
+        <div>
+          <div class="tcol-head"><b>Draft</b><span class="tcol-count">2</span></div>
+          <div class="card tcard"><b>NUS — Computer Science</b><div class="loc">Singapore</div><div class="tcard-foot"><span class="pill pill-muted">Not started</span><span class="tcard-date">Due 15 Mar</span></div></div>
+          <div class="card tcard"><b>Melbourne — Data Science</b><div class="loc">Australia</div><div class="tcard-foot"><span class="pill pill-muted">Not started</span><span class="tcard-date">Due 02 Apr</span></div></div>
+        </div>
+        <div>
+          <div class="tcol-head"><b>Docs pending</b><span class="tcol-count">1</span></div>
+          <div class="card tcard"><b>TU Munich — Data Engineering</b><div class="loc">Germany</div><div class="tcard-foot"><span class="pill pill-warning">2 of 5 docs</span><span class="tcard-date">Due 20 Jan</span></div></div>
+        </div>
+        <div>
+          <div class="tcol-head"><b>Under review</b><span class="tcol-count">2</span></div>
+          <div class="card tcard"><b>University of Toronto — MSc CS</b><div class="loc">Canada</div><div class="tcard-foot"><span class="pill pill-success">Submitted</span><span class="tcard-date">05 Dec</span></div></div>
+          <div class="card tcard"><b>KTH — AI Track</b><div class="loc">Sweden</div><div class="tcard-foot"><span class="pill pill-success">Submitted</span><span class="tcard-date">18 Dec</span></div></div>
+        </div>
+        <div>
+          <div class="tcol-head"><b>Decision</b><span class="tcol-count">1</span></div>
+          <div class="card tcard"><b>University of Waterloo — CS</b><div class="loc">Canada</div><div class="tcard-foot"><span class="pill pill-success">Offer received</span><span class="tcard-date">28 Aug</span></div></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ================= 05 COMMUNITY FORUM ================= -->
+<section class="screen" id="forum">
+  <div class="app-shell">
+    <nav class="app-nav">
+      <div class="app-logo"><span class="logo-mark">S</span>Study Compass</div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Community</span>
+        <a class="active" href="#"><span class="ic">◔</span>Forum</a>
+        <a href="#"><span class="ic">i</span>Financial Aid</a>
+        <a href="#"><span class="ic">✉</span>Contact &amp; FAQ</a>
+      </div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Main</span>
+        <a href="#"><span class="ic">◆</span>Dashboard</a>
+        <a href="#"><span class="ic">⌕</span>Search Universities</a>
+      </div>
+    </nav>
+    <main class="app-main">
+      <div class="app-header">
+        <div><h1>Community forum</h1><p>Ask questions and hear from students already abroad.</p></div>
+        <button class="btn btn-primary">+ New thread</button>
+      </div>
+      <div class="card card-pad">
+        <div class="thread-row">
+          <div class="thread-votes"><b>128</b><span>upvotes</span></div>
+          <div class="thread-body">
+            <span class="thread-cat">Visa</span>
+            <h4>How long did your Canada study permit actually take in 2026?</h4>
+            <div class="thread-meta"><span>Posted by Rafi H.</span><span>34 replies</span><span>3 hours ago</span></div>
+          </div>
+        </div>
+        <div class="thread-row">
+          <div class="thread-votes"><b>96</b><span>upvotes</span></div>
+          <div class="thread-body">
+            <span class="thread-cat">Scholarship</span>
+            <h4>DAAD interview — what questions came up for CS applicants?</h4>
+            <div class="thread-meta"><span>Posted by Nusrat J.</span><span>21 replies</span><span>Yesterday</span></div>
+          </div>
+        </div>
+        <div class="thread-row">
+          <div class="thread-votes"><b>54</b><span>upvotes</span></div>
+          <div class="thread-body">
+            <span class="thread-cat">Exam prep</span>
+            <h4>Best free resources for IELTS writing task 2?</h4>
+            <div class="thread-meta"><span>Posted by Tanvir A.</span><span>17 replies</span><span>2 days ago</span></div>
+          </div>
+        </div>
+        <div class="thread-row" style="border-bottom:none;">
+          <div class="thread-votes"><b>41</b><span>upvotes</span></div>
+          <div class="thread-body">
+            <span class="thread-cat">Budget</span>
+            <h4>Realistic monthly living cost in Stockholm as a student?</h4>
+            <div class="thread-meta"><span>Posted by Farzana S.</span><span>12 replies</span><span>3 days ago</span></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</section>
+
+<!-- ================= 06 ADMIN DASHBOARD ================= -->
+<section class="screen" id="admin">
+  <div class="app-shell">
+    <nav class="app-nav">
+      <div class="app-logo"><span class="logo-mark">S</span>Study Compass <span style="font-size:10px; background:var(--gold); color:var(--ink); padding:2px 7px; border-radius:10px; margin-left:6px; font-family:'Public Sans'; font-weight:700;">Admin</span></div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Overview</span>
+        <a class="active" href="#"><span class="ic">◆</span>Analytics</a>
+      </div>
+      <div class="app-nav-group">
+        <span class="app-nav-label">Manage</span>
+        <a href="#"><span class="ic">🎓</span>Universities</a>
+        <a href="#"><span class="ic">$</span>Scholarships</a>
+        <a href="#"><span class="ic">▤</span>Articles &amp; News</a>
+        <a href="#"><span class="ic">☺</span>Users</a>
+        <a href="#"><span class="ic">◔</span>Forum moderation</a>
+      </div>
+    </nav>
+    <main class="app-main">
+      <div class="app-header">
+        <div><h1>Admin overview</h1><p>Platform activity for the last 30 days.</p></div>
+      </div>
+      <div class="stat-row">
+        <div class="card stat-card"><span>Active students</span><b>41,208</b><span class="delta delta-up">+6.4%</span></div>
+        <div class="card stat-card"><span>New applications</span><b>3,120</b><span class="delta delta-up">+11%</span></div>
+        <div class="card stat-card"><span>Listed universities</span><b>3,214</b><span class="delta delta-up">+18 this month</span></div>
+        <div class="card stat-card"><span>Open forum reports</span><b>4</b><span class="delta delta-down">Needs review</span></div>
+      </div>
+
+      <div class="card card-pad">
+        <div class="card-title-row"><h3>Recent user accounts</h3><span class="link-sm">Manage users →</span></div>
+        <table class="admin-table">
+          <thead><tr><th>User</th><th>Role</th><th>Applications</th><th>Joined</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td><div class="row-user"><span class="row-avatar">AS</span>Ayesha Siddika</div></td><td>Student</td><td>6</td><td>12 Jan 2026</td><td><span class="status-dot" style="background:var(--success);"></span>Active</td></tr>
+            <tr><td><div class="row-user"><span class="row-avatar">RH</span>Rafi Hasan</div></td><td>Student</td><td>3</td><td>04 Feb 2026</td><td><span class="status-dot" style="background:var(--success);"></span>Active</td></tr>
+            <tr><td><div class="row-user"><span class="row-avatar">TU</span>University of Toronto</div></td><td>Partner institution</td><td>—</td><td>19 Nov 2025</td><td><span class="status-dot" style="background:var(--success);"></span>Active</td></tr>
+            <tr><td><div class="row-user"><span class="row-avatar">NJ</span>Nusrat Jahan</div></td><td>Student</td><td>2</td><td>27 Aug 2026</td><td><span class="status-dot" style="background:var(--warning);"></span>Pending verification</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</section>
+
+<script>
+  function showScreen(id, el){
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    document.querySelectorAll('.proto-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+    window.scrollTo({top:0, behavior:'instant'});
+  }
+</script>
+</body>
+</html>
