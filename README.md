@@ -36,6 +36,4 @@ for auto-reload while editing.
   to a horizontal top nav), and 480px (small phones). They're grouped at the
   bottom of `style.css`.
 
-## Notes
-- No build step, no dependencies — plain HTML/CSS (+ ~10 lines of vanilla JS
-  for the screen switcher). Safe to drop straight into any static host.
+
