@@ -56,12 +56,7 @@ cd study-compass
   --font-serif: 'Fraunces', serif;
   --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Elevation & Borders */
-  --radius-s: 4px;
-  --radius-m: 8px;
-  --radius-l: 16px;
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+ 
 }
 🧭 Multi-Screen Prototype ArchitectureAll platform screens exist within dedicated section elements:HTML<section class="screen" id="screen-[view-name]">
   <!-- Isolated View Content -->
