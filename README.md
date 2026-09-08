@@ -52,9 +52,6 @@ cd study-compass
   --background: #f8fafc;       /* Canvas foundation */
   --surface: #ffffff;          /* Card and container background */
 
-  /* Typography Fallbacks */
-  --font-serif: 'Fraunces', serif;
-  --font-sans: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
  
 }
