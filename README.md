@@ -22,14 +22,6 @@ Study Compass streamlines the fragmented workflow international students navigat
 
 ---
 
-## 🛠️ Tech Stack & Typography
-
-* **Structure:** Semantic HTML5 (`<main>`, `<section>`, `<article>`, `<aside>`, `<nav>`)
-* **Styling:** CSS3 Custom Properties (Design Tokens), Flexbox layout systems, and CSS Grid
-* **Typography Engine:**
-  * **Headings / Editorial:** [Fraunces](https://fonts.google.com/specimen/Fraunces) (Variable optical serif)
-  * **UI & Body:** [Public Sans](https://fonts.google.com/specimen/Public+Sans) (High-clarity neutral sans-serif)
-* **Icons & Assets:** Optimized vector paths and system typography fallbacks
 
 ---
 
