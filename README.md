@@ -27,22 +27,7 @@ Study Compass streamlines the fragmented workflow international students navigat
 
 ## 📂 Repository Layout
 
-```text
-study-compass/
-│
-├── index.html          # All 6 operational view containers and prototype nav engine
-├── css/
-│   └── style.css       # Token definitions (:root), layout systems, and responsive rules
-└── README.md           # Engineering documentation and customization guidelines
-🚀 Quick Start GuideThis project requires zero external build dependencies, package installations, or local servers to execute.1. Clone the RepositoryBashgit clone [https://github.com/your-username/study-compass.git](https://github.com/your-username/study-compass.git)
-cd study-compass
-2. Launch InterfaceStandard File Execution: Double-click index.html or open it directly in any modern desktop or mobile browser.VS Code Live Server (Recommended): Right-click index.html inside VS Code and select "Open with Live Server" to enable real-time style reloads upon saving.⚙️ Design Token System & CustomizationThe layout leverages CSS custom properties declared inside :root at the top of css/style.css. Adjusting these variables propagates site-wide changes instantly without altering individual component rules.CSS:root {
-  /* Brand Palette */
-  --primary: #1e3a8a;          /* Deep institutional navy */
-  --primary-accent: #3b82f6;   /* Active selection highlight */
-  --gold: #d97706;             /* Accents, metrics, and badges */
-  --background: #f8fafc;       /* Canvas foundation */
-  --surface: #ffffff;          /* Card and container background */
+
 
 
  
