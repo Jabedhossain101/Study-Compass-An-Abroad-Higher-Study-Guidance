@@ -13,19 +13,6 @@ A modular, highly responsive, multi-view front-end prototype engineered with sem
 
 Study Compass streamlines the fragmented workflow international students navigate when planning higher education. Rather than distributing screens across static multi-page files, this repository consolidates 6 essential operational views into a unified environment toggled by a lightweight, top-anchored prototype control bar:
 
-1. **Public Landing Page:** Strategic value proposition, institutional metrics, curated program tracks, and registration entry points.
-2. **Student Dashboard:** Visual progress metrics, impending deadlines, document verification checklists, and algorithm-matched universities.
-3. **University Search & Discovery:** Filterable catalog cards, acceptance rate projections, tuition metrics, and program comparison tags.
-4. **Application Tracker:** Visual pipeline tracking admissions milestones (Drafting, Submission, Committee Review, Visa Processing).
-5. **Community Forum:** Threaded peer-to-peer discussions, country-specific admissions channels, and mentor query sections.
-6. **Admin Dashboard:** Platform-wide telemetry, institutional verification controls, user governance, and data analytics.
-
----
-
-
----
-
-## 📂 Repository Layout
 
 
 
