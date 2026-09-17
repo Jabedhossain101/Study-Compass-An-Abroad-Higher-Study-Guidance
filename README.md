@@ -9,9 +9,6 @@ A modular, highly responsive, multi-view front-end prototype engineered with sem
 
 ---
 
-## 📌 Executive Overview
-
-Study Compass streamlines the fragmented workflow international students navigate when planning higher education. Rather than distributing screens across static multi-page files, this repository consolidates 6 essential operational views into a unified environment toggled by a lightweight, top-anchored prototype control bar:
 
 
 
