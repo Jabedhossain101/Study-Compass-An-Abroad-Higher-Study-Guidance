@@ -16,7 +16,4 @@ A modular, highly responsive, multi-view front-end prototype engineered with sem
 
  
 }
-🧭 Multi-Screen Prototype ArchitectureAll platform screens exist within dedicated section elements:HTML<section class="screen" id="screen-[view-name]">
-  <!-- Isolated View Content -->
-</section>
 
