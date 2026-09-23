@@ -5,9 +5,7 @@
 [![CSS3](https://img.shields.io/badge/Styling-CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Responsive](https://img.shields.io/badge/Layout-Responsive-success.svg)](#-responsive-breakpoints)
 
-A modular, highly responsive, multi-view front-end prototype engineered with semantic HTML5 and a token-driven modern CSS3 architecture. **Study Compass** unifies global university search, application lifecycle monitoring, peer-to-peer discourse, and administrative controls into a single, high-performance static evaluation harness.
 
----
 
 
 
